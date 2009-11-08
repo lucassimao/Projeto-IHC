@@ -2,7 +2,7 @@ package br.ifpi
 
 class Compromisso {
 
-	Strign descricao
+	String descricao
 	Date data
 	String local
 	String horario
@@ -12,5 +12,8 @@ class Compromisso {
 		data(nullable:false,blank:false)
 		local(nullable:false,blank:false)
 		horario(nullable:false,blank:false)
+	}
+	static mapping ={
+		tablePerHierarchy false
 	}
 }
