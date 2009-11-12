@@ -1,0 +1,153 @@
+<?page title="Minhas Reuniões"?>
+
+<window position="center" mode="modal" title="Agenda Pessoal"
+	border="normal" width="98%" height="98%">
+	<style>
+		.z-caption .z-caption-l, .z-caption .z-caption-r {
+		font-size:20px; }
+
+		.z-groupbox-hl .z-groupbox-header {
+		color:#373737;font-weight:bold; }
+
+		.z-panel-children { border-color:red; }
+
+
+	</style>
+
+
+	<columnlayout height="100%">
+		<columnchildren width="25%">
+			<panel>
+				<panelchildren>
+					<vbox>
+						<box>
+							<space height="15px" />
+							<hbox>
+								<vbox width="8px" />
+								<groupbox closable="false" mold="3d"
+									width="270px">
+									<caption style="font-size:120px"
+										label="Agendar Reunião" />
+									<image src="images/Add-128.png"
+										border="true" />
+
+								</groupbox>
+
+							</hbox>
+
+							<hbox>
+								<vbox width="8px" />
+								<groupbox closable="false" mold="3d"
+									width="270px">
+									<caption
+										label="Excluir Reunião" />
+									<image
+										src="images/Empty Trash_128x128.png" />
+
+								</groupbox>
+
+
+							</hbox>
+
+							<hbox>
+								<vbox width="8px" />
+								<groupbox closable="false" mold="3d"
+									width="270px">
+									<caption label="Editar dados"
+										tooltiptext="Editar dados da reunião" />
+									<image src="images/Pencil-128.png" />
+
+								</groupbox>
+
+
+							</hbox>
+							<hbox>
+								<vbox width="8px" />
+								<groupbox closable="false" mold="3d"
+									width="270px" height="150px">
+									<caption label="Voltar"
+										tooltiptext="Voltar para página principal" />
+									<image src="images/Back-128.png" />
+
+								</groupbox>
+
+
+							</hbox>
+
+						</box>
+					</vbox>
+
+				</panelchildren>
+			</panel>
+
+		</columnchildren>
+
+		<columnchildren width="75%" height="100%">
+			<panel>
+				<panelchildren>
+					<hbox>
+						<label value="Agenda > Minhas reuniões"
+							style="font-weight:bold;font-size:20px" />
+
+					</hbox>
+
+					<space height="20px" />
+
+					<groupbox>
+						<caption>Procurar Reunião</caption>
+
+						<vbox width="98%">
+
+							<hbox align="center">
+								<vbox>
+									Descrição:
+									<textbox width="450px" height="20px"
+										style="font-size:18px" />
+									<hbox>
+										<vbox>
+											Data:
+											<datebox width="140px" />
+										</vbox>
+										<vbox>
+											Local:
+											<textbox width="290px"
+												height="20px" style="font-size:18px" />
+										</vbox>
+									</hbox>
+
+								</vbox>
+								<image height="100px"
+									src="images/Find Search_64.png" />
+							</hbox>
+
+
+
+							<listbox height="455px"
+								fixedLayout="true">
+								<listhead>
+									<listheader label="Reunião"
+										sort="auto" width="50%" />
+									<listheader label="Data"
+										sort="auto" />
+									<listheader label="Local"
+										sort="auto" />
+						
+								</listhead>
+								<listitem>
+									<listcell label="" />
+									<listcell label="" />
+									<listcell label="" />
+								</listitem>
+
+							</listbox>
+
+						</vbox>
+					</groupbox>
+
+
+				</panelchildren>
+			</panel>
+
+		</columnchildren>
+	</columnlayout>
+</window>
