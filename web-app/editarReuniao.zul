@@ -1,0 +1,377 @@
+<?page title="Minhas Reuniões"?>
+
+<window position="center" mode="modal" title="Agenda Pessoal"
+	border="normal" width="98%" height="98%">
+	<style>
+		.z-caption .z-caption-l, .z-caption .z-caption-r {
+		font-size:20px; }
+
+		.z-groupbox-hl .z-groupbox-header {
+		color:#373737;font-weight:bold; }
+
+		.z-panel-children { border-color:red; } .asterisco{
+		font-size:25px; color:red; }
+
+	</style>
+
+
+	<columnlayout height="100%">
+		<columnchildren width="25%">
+			<panel>
+				<panelchildren>
+					<vbox>
+						<box>
+							<space height="15px" />
+							<hbox>
+								<vbox width="8px" />
+								<groupbox closable="false" mold="3d"
+									width="270px">
+									<caption style="font-size:120px"
+										label="Cancelar Edição" />
+									<image src="images/Delete-128.png"
+										border="true" />
+
+								</groupbox>
+
+							</hbox>
+
+							<hbox>
+								<vbox width="8px" />
+								<groupbox closable="false" mold="3d"
+									width="270px">
+									<caption label="Limpar Formulário" />
+									<image
+										src="images/128px-Broom_icon.svg.png" />
+
+								</groupbox>
+
+
+							</hbox>
+
+							<hbox>
+								<vbox width="8px" />
+								<groupbox closable="false" mold="3d"
+									width="270px">
+									<caption label="Voltar"
+										tooltiptext="Voltar para o cadastro de contatos" />
+									<image src="images/Back-128.png" />
+
+								</groupbox>
+
+
+							</hbox>
+
+						</box>
+					</vbox>
+
+				</panelchildren>
+			</panel>
+
+		</columnchildren>
+
+		<columnchildren width="75%" height="100%">
+			<panel>
+				<panelchildren>
+					<hbox>
+						<label
+							value="Agenda > Minhas Reuniões > Editar Reunião"
+							style="font-weight:bold;font-size:20px" />
+
+					</hbox>
+
+					<space height="20px" />
+
+					<vbox align="start" width="100%" height="14%">
+						<label style="font-size:20px">
+							Preencha os seguintes campos:
+						</label>
+						<html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+							
+							<![CDATA[<span style="font-size:15px;">
+							Atenção para os campos com <span
+							class="asterisco"> * </span> pois eles são
+							obrigatórios </span>]]>
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+														
+							
+						</html>
+					</vbox>
+
+					<space height="20px" />
+
+
+
+					<hbox width="60%" align="start" height="50%">
+
+						<columnlayout>
+							<columnchildren width="50%" height="100%">
+								<panel>
+									<panelchildren>
+										<vbox align="start" width="100%"
+											height="65%">
+											<html>
+
+
+
+
+
+
+
+
+
+
+
+												
+												<![CDATA[ <span
+												style="font-size:20px;font-weight:bold;"><span
+												class="asterisco"> *
+												</span>Descrição:</span>]]>
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+			   </html>
+											<textbox multiline="true"
+												height="150px" width="98%" />
+
+										</vbox>
+									</panelchildren>
+								</panel>
+							</columnchildren>
+
+							<columnchildren width="50%" height="100%">
+								<panel>
+									<panelchildren>
+										<hbox width="100%">
+											<vbox width="80%">
+												<html>
+
+
+
+
+
+
+
+
+
+
+													
+													<![CDATA[ <span
+													style="font-size:20px;font-weight:bold;"><span
+													class="asterisco"> *
+													</span>Data:</span>]]>
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+			   </html>
+												<datebox width="100%" />
+											</vbox>
+
+											<vbox width="60%">
+												<html>
+
+
+
+
+
+
+
+
+
+
+													
+													<![CDATA[ <span
+													style="font-size:20px;font-weight:bold;"><span
+													class="asterisco">
+													*</span>Horário:</span>]]>
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+			   </html>
+
+												<hbox width="80px">
+													<intbox
+														maxlength="2" width="100%" />
+													<label
+														style="font-size:18px;font-weight:bold;">
+														:
+													</label>
+													<intbox
+														maxlength="2" width="100%" />
+												</hbox>
+											</vbox>
+
+										</hbox>
+										<vbox>
+											<html>
+
+
+
+
+
+
+
+
+
+												
+												<![CDATA[ <span
+												style="font-size:20px;font-weight:bold;"><span
+												class="asterisco"> *
+												</span>Local:</span>]]>
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+			   </html>
+											<textbox width="100%" />
+										</vbox>
+
+									</panelchildren>
+								</panel>
+							</columnchildren>
+						</columnlayout>
+					</hbox>
+
+					<groupbox width="60%" height="50%">
+						<caption>Membros</caption>
+						<vbox>
+							Selecione os contatos que participarão da
+							reunião
+							<columnlayout>
+								<columnchildren width="43%">
+									<panel>
+										<panelchildren>
+											<listbox height="120px"
+												fixedLayout="true">
+												<listhead>
+													<listheader
+														label="Contatos" sort="auto" />
+												</listhead>
+												<listitem>
+													<listcell label="" />
+												</listitem>
+											</listbox>
+										</panelchildren>
+									</panel>
+								</columnchildren>
+								<columnchildren width="13%">
+									<panel>
+										<panelchildren>
+											<hbox>
+												<space width="5%" />
+												<vbox>
+													<space height="30%" />
+													<button
+														image="images/Back-16.png" />
+													<button
+														image="images/Back2-16.png" />
+												</vbox>
+												<space width="5%" />
+											</hbox>
+										</panelchildren>
+									</panel>
+								</columnchildren>
+								<columnchildren width="43%">
+									<panel>
+										<panelchildren>
+											<listbox height="120px"
+												fixedLayout="true">
+												<listhead>
+													<listheader
+														label="Convidados" sort="auto" />
+												</listhead>
+												<listitem>
+													<listcell label="" />
+												</listitem>
+											</listbox>
+										</panelchildren>
+									</panel>
+								</columnchildren>
+							</columnlayout>
+						</vbox>
+					</groupbox>
+
+
+
+
+					<hbox align="center">
+						<vbox height="150px" />
+						<button height="35px" label="Salvar"
+							image="images/Add-32.png" />
+						<button height="35px" image="images/Add-32.png"
+							label="Salvar e Cadastrar outra reunião" />
+						<button height="35px" label="Cancelar"
+							image="images/Delete-32.png" />
+					</hbox>
+
+
+
+
+
+
+				</panelchildren>
+			</panel>
+
+		</columnchildren>
+	</columnlayout>
+</window>

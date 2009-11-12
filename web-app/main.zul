@@ -1,7 +1,8 @@
 <?page title="Agenda Pessoal"?>
 
 <window position="center" mode="modal" title="Agenda Pessoal"
-	border="normal" width="95%">
+	border="normal" width="98%" height="98%">
+
 	<style>
 		.z-caption .z-caption-l, .z-caption .z-caption-r {
 		font-size:20px; }
@@ -54,7 +55,8 @@
 									width="270px">
 									<caption label="Reuniões" />
 									<image
-										src="images/Address-Book_128x128.png" />
+										src="images/reuniao.png" />
+
 
 								</groupbox>
 
@@ -90,11 +92,20 @@
 					<vbox width="100%">
 						<groupbox mold="3d" closable="false"
 							width="85%">
-							<caption label="Reuniões">
-								<image src="images/Pencil-32.png" height="30px"
-									tooltiptext="Editar" />
-								<image src="images/Delete-128.png"
-									height="30px" tooltiptext="Excluir" />
+
+							<caption label="Compromisso">
+								<hbox>
+								<vbox>
+								<image src="images/Pencil-32.png" height="30px"/>
+								Editar
+								</vbox>
+								
+								<vbox>
+								<image src="images/Delete-128.png"	height="30px" />
+								Excluir
+								</vbox>
+								</hbox>
+								
 							</caption>
 							<image height="64px"
 								src="images/Address-Book_128x128.png" />
@@ -103,24 +114,64 @@
 
 						<groupbox closable="false" mold="3d"
 							width="85%">
-							<caption label="Reuniões">
-								<image src="images/Pencil-32.png"
-									height="30px" />
-								<image src="images/Delete-128.png"
-									height="30px" />
+
+							<caption label="Reunião">
+	<hbox>
+								<vbox>
+								<image src="images/Pencil-32.png" height="30px"/>
+								Editar
+								</vbox>
+								
+								<vbox>
+								<image src="images/Delete-128.png"	height="30px" />
+								Excluir
+								</vbox>
+								</hbox>
+								
 							</caption>
 							<image height="64px"
-								src="images/Address-Book_128x128.png" />
+								src="images/reuniao.png" />
 
 						</groupbox>
 
 						<groupbox closable="false" mold="3d"
 							width="85%">
-							<caption label="Reuniões">
-								<image src="images/Pencil-32.png"
-									height="30px" />
-								<image src="images/Delete-128.png"
-									height="30px" />
+
+							<caption label="Reunião">
+	<hbox>
+								<vbox>
+								<image src="images/Pencil-32.png" height="30px"/>
+								Editar
+								</vbox>
+								
+								<vbox>
+								<image src="images/Delete-128.png"	height="30px" />
+								Excluir
+								</vbox>
+								</hbox>
+								
+							</caption>
+							<image height="64px"
+								src="images/reuniao.png" />
+
+						</groupbox>
+						
+												<groupbox mold="3d" closable="false"
+							width="85%">
+							<caption label="Compromisso">
+								<hbox>
+								<vbox>
+								<image src="images/Pencil-32.png" height="30px"/>
+								Editar
+								</vbox>
+								
+								<vbox>
+								<image src="images/Delete-128.png"	height="30px" />
+								Excluir
+								</vbox>
+								</hbox>
+								
+
 							</caption>
 							<image height="64px"
 								src="images/Address-Book_128x128.png" />

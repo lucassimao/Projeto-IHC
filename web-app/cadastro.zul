@@ -1,0 +1,204 @@
+<window position="center" mode="modal" title="Cadastro" border="normal"
+	width="95%" height="95%">
+
+	<style>.asterisco{ font-size:25px; color:red; }</style>
+
+	<vbox align="center" width="95%" height="25%">
+		<label style="font-size:60px">
+			Crie sua agenda virtual agora!
+		</label>
+	</vbox>
+
+
+	<columnlayout>
+		<columnchildren width="20%">
+			<panel>
+				<panelchildren></panelchildren>
+			</panel>
+		</columnchildren>
+
+		<columnchildren width="70%">
+			<panel>
+				<panelchildren>
+					<vbox align="start" width="100%" height="14%">
+						<label style="font-size:20px">
+							Preencha os seguintes campos:
+						</label>
+						<html>
+
+
+
+
+							
+							<![CDATA[<span style="font-size:15px;">
+							Atenção para os campos com <span
+							class="asterisco"> * </span> pois eles são
+							obrigatórios </span>]]>
+							
+							
+							
+							
+							
+						</html>
+					</vbox>
+
+					<space height="60px" />
+
+
+
+
+					<vbox align="start" width="100%" height="65%">
+						<html>
+
+
+
+
+
+
+
+
+
+
+							
+							<![CDATA[ <span
+							style="font-size:20px;font-weight:bold;"><span
+							class="asterisco"> * </span>Nome:</span>]]>
+							
+							
+							
+							
+							
+							
+				
+				
+				
+							
+					
+			   </html>
+						<textbox width="75%" />
+						<hbox width="100%">
+							<vbox>
+								<html>
+
+
+
+
+
+									
+									<![CDATA[ <span
+									style="font-size:18px;font-weight:bold;"><span
+									class="asterisco"> * </span>Data de
+									Nascimento:</span>]]>
+									
+									
+									
+									
+									
+									 </html>
+								<datebox width="100%" />
+							</vbox>
+
+							<vbox>
+								<html>
+
+
+
+
+
+									
+									<![CDATA[ <span
+									style="font-size:18px;font-weight:bold;"><span
+									class="asterisco"> *
+									</span>Sexo:</span>]]>
+									
+									
+									
+									
+									
+									  </html>
+								<radiogroup>
+									<radio
+										style="font-size:12px;font-weight:bold;" label="Masculino" />
+									<radio
+										style="font-size:12px;font-weight:bold;" label="Feminino" />
+								</radiogroup>
+							</vbox>
+						</hbox>
+
+						<label
+							style="font-size:18px;font-weight:bold;">
+							Email:
+						</label>
+						<textbox width="25%" />
+					</vbox>
+
+
+
+					<hbox width="100%">
+						<vbox width="50%">
+							<html>
+
+
+
+
+
+								
+								<![CDATA[ <span
+								style="font-size:18px;font-weight:bold;"><span
+								class="asterisco"> *
+								</span>Usuário:</span>]]>
+								
+								
+								
+								
+								
+										
+			   </html>
+							<textbox width="100%" />
+						</vbox>
+
+						<vbox width="50%">
+							<html>
+
+
+
+
+
+								
+								<![CDATA[ <span
+								style="font-size:18px;font-weight:bold;"><span
+								class="asterisco"> *
+								</span>Senha:</span>]]>
+								
+								
+								
+								
+								
+											
+			   </html>
+							<textbox width="100%" />
+
+						</vbox>
+					</hbox>
+
+					<hbox align="center">
+						<vbox height="150px"/>
+						<button height="35px"
+							label="Criar minha agenda!" />
+						<button height="35px" label="Voltar para página principal" />
+					</hbox>
+
+
+
+
+
+				</panelchildren>
+			</panel>
+		</columnchildren>
+
+	</columnlayout>
+
+
+
+
+</window>
