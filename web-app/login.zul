@@ -1,0 +1,83 @@
+<?page title="Agenda Pessoal"?>
+
+<window position="center" mode="modal" title="Agenda Pessoal"
+	border="normal" width="98%" height="98%">
+	<style>
+		.z-caption .z-caption-l, .z-caption .z-caption-r {
+		font-size:20px; }
+
+		.z-groupbox-hl .z-groupbox-header {
+		color:#373737;font-weight:bold; }
+
+		.z-panel-children { border-color:red; }
+
+
+	</style>
+
+	<columnlayout>
+		<columnchildren width="75%">
+			<panel>
+				<panelchildren>
+					<groupbox style="background-color:rgb(236,248,251)" width="97%" height="450px">
+						<space height="200px"/>
+						<label style="font-size:30px;align:center">
+							Leve seus compromissos e contatos para aonde
+							você for!
+						</label>
+					</groupbox>
+				</panelchildren>
+			</panel>
+		</columnchildren>
+		<columnchildren width="25%">
+			<panel>
+				<panelchildren>
+
+					<vbox width="100%">
+						<groupbox>
+							<vbox width="100%">
+								<groupbox>
+									<caption>Acesse sua agenda</caption>
+									<vbox width="100%">
+										Usuário:
+										<textbox width="60%" />
+										Senha:
+										<textbox width="60%" />
+										<space height="20px" />
+										<hbox>
+											<button label="Entrar" />
+											<button label="Limpar" />
+										</hbox>
+									</vbox>
+								</groupbox>
+
+							</vbox>
+							<space height="36px" />
+							<vbox width="100%">
+								<groupbox>
+									<groupbox
+										style="background-color:rgb(255,255,128)" closable="false"
+										mold="3d" width="100%">
+										<caption />
+										<label style="font-size:25px">
+											Não perca seus compromissos!
+										</label>
+
+									</groupbox>
+									<groupbox
+										style="background-color:rgb(128,255,128)" closable="false"
+										mold="3d" width="100%">
+										<caption />
+										<label style="font-size:25px">
+											Crie sua agenda virtual!
+										</label>
+									</groupbox>
+								</groupbox>
+							</vbox>
+						</groupbox>
+					</vbox>
+				</panelchildren>
+			</panel>
+		</columnchildren>
+	</columnlayout>
+
+</window>
