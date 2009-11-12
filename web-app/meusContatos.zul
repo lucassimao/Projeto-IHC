@@ -1,0 +1,141 @@
+<?page title="Meus Contatos"?>
+
+<window position="center" mode="modal" title="Agenda Pessoal"
+	border="normal" width="98%" height="98%">
+	<style>
+		.z-caption .z-caption-l, .z-caption .z-caption-r {
+		font-size:20px; }
+
+		.z-groupbox-hl .z-groupbox-header {
+		color:#373737;font-weight:bold; }
+
+		.z-panel-children { border-color:red; }
+
+
+	</style>
+
+
+	<columnlayout height="100%">
+		<columnchildren width="25%">
+			<panel>
+				<panelchildren>
+					<vbox>
+						<box>
+							<space height="15px" />
+							<hbox>
+								<vbox width="8px" />
+								<groupbox closable="false" mold="3d"
+									width="270px">
+									<caption style="font-size:120px"
+										label="Cadastrar Contato" />
+									<image src="images/Add-128.png"
+										border="true" />
+
+								</groupbox>
+
+							</hbox>
+
+							<hbox>
+								<vbox width="8px" />
+								<groupbox closable="false" mold="3d"
+									width="270px">
+									<caption label="Excluir Contato" />
+									<image src="images/Empty Trash_128x128.png" />
+
+								</groupbox>
+
+
+							</hbox>
+
+							<hbox>
+								<vbox width="8px" />
+								<groupbox closable="false" mold="3d"
+									width="270px">
+									<caption label="Editar dados"
+										tooltiptext="Editar dados do Contato" />
+									<image src="images/Pencil-128.png" />
+
+								</groupbox>
+
+
+							</hbox>
+							<hbox>
+								<vbox width="8px" />
+								<groupbox closable="false" mold="3d"
+									width="270px" height="150px">
+									<caption label="Voltar"
+										tooltiptext="Voltar para página principal" />
+									<image src="images/Back-128.png" />
+
+								</groupbox>
+
+
+							</hbox>
+
+						</box>
+					</vbox>
+
+				</panelchildren>
+			</panel>
+
+		</columnchildren>
+
+		<columnchildren width="75%" height="100%">
+			<panel>
+				<panelchildren>
+					<hbox>
+						<label value="Agenda > Meus Contatos"
+							style="font-weight:bold;font-size:20px" />
+
+					</hbox>
+
+					<space height="20px" />
+
+					<groupbox>
+						<caption>Procurar Contato</caption>
+
+						<vbox width="98%">
+							
+							<hbox align="center">
+								<vbox>
+								Nome:
+								<textbox width="450px" height="20px"
+									style="font-size:18px" />
+								</vbox>
+								<image height="100px"
+									src="images/Find Search_64.png" />
+							</hbox>
+
+
+
+							<listbox height="455px"
+								fixedLayout="true">
+								<listhead>
+									<listheader label="Nome"
+										sort="auto" />
+									<listheader label="Endereço"
+										sort="auto" />
+									<listheader label="Telefone"
+										sort="auto" />
+									<listheader label="Celular"
+										sort="auto" />
+								</listhead>
+								<listitem>
+									<listcell label="" />
+									<listcell label="" />
+									<listcell label="" />
+									<listcell label="" />
+								</listitem>
+
+							</listbox>
+
+						</vbox>
+					</groupbox>
+
+
+				</panelchildren>
+			</panel>
+
+		</columnchildren>
+	</columnlayout>
+</window>
