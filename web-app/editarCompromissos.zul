@@ -1,0 +1,185 @@
+<?page title="Meus Compromissos"?>
+
+<window position="center" mode="modal" title="Agenda Pessoal"
+	border="normal" width="98%" height="98%">
+	<style>
+		.z-caption .z-caption-l, .z-caption .z-caption-r {
+		font-size:20px; }
+
+		.z-groupbox-hl .z-groupbox-header {
+		color:#373737;font-weight:bold; }
+
+		.z-panel-children { border-color:red; } .asterisco{
+		font-size:25px; color:red; }
+
+	</style>
+
+
+	<columnlayout height="100%">
+		<columnchildren width="25%">
+			<panel>
+				<panelchildren>
+					<vbox>
+						<box>
+							<space height="15px" />
+							<hbox>
+								<vbox width="8px" />
+								<groupbox closable="false" mold="3d"
+									width="270px">
+									<caption style="font-size:120px"
+										label="Cancelar Edição" />
+									<image src="images/Delete-128.png"
+										border="true" />
+
+								</groupbox>
+
+							</hbox>
+
+							<hbox>
+								<vbox width="8px" />
+								<groupbox closable="false" mold="3d"
+									width="270px">
+									<caption label="Limpar Formulário" />
+									<image
+										src="images/128px-Broom_icon.svg.png" />
+
+								</groupbox>
+
+
+							</hbox>
+
+							<hbox>
+								<vbox width="8px" />
+								<groupbox closable="false" mold="3d"
+									width="270px">
+									<caption label="Voltar"
+										tooltiptext="Voltar para o cadastro de contatos" />
+									<image src="images/Back-128.png" />
+
+								</groupbox>
+
+
+							</hbox>
+
+						</box>
+					</vbox>
+
+				</panelchildren>
+			</panel>
+
+		</columnchildren>
+
+		<columnchildren width="75%" height="100%">
+			<panel>
+				<panelchildren>
+					<hbox>
+						<label
+							value="Agenda > Meus Contatos > Editar Compromisso"
+							style="font-weight:bold;font-size:20px" />
+
+					</hbox>
+
+					<space height="20px" />
+
+					<vbox align="start" width="100%" height="14%">
+						<label style="font-size:20px">
+							Preencha os seguintes campos:
+						</label>
+						<html>
+
+
+
+
+
+
+
+							
+							<![CDATA[<span style="font-size:15px;">
+							Atenção para os campos com <span
+							class="asterisco"> * </span> pois eles são
+							obrigatórios </span>]]>
+							
+							
+							
+							
+							
+							
+							
+							
+						</html>
+					</vbox>
+
+					<space height="20px" />
+
+
+
+
+					<vbox align="start" width="100%" height="65%">
+						<html>
+							<![CDATA[ <span
+							style="font-size:20px;font-weight:bold;"><span
+							class="asterisco"> *
+							</span>Descrição:</span>]]>
+			   </html>
+						<textbox multiline="true" height="150px"
+							width="42%" />
+
+						<html>
+							<![CDATA[ <span
+							style="font-size:20px;font-weight:bold;"><span
+							class="asterisco"> *
+							</span>Local:</span>]]>
+			   </html>
+						<textbox width="42%" />
+
+					</vbox>
+
+
+
+					<hbox width="100%">
+						<vbox width="50%">
+						<html>
+							<![CDATA[ <span
+							style="font-size:20px;font-weight:bold;"><span
+							class="asterisco"> *
+							</span>Data:</span>]]>
+			   </html>
+							<datebox width="100%" />
+						</vbox>
+
+						<vbox width="50%">
+							<label
+								style="font-size:18px;font-weight:bold;">
+								Horário:
+							</label>
+							<hbox width="80px">
+								<intbox maxlength="2" width="100%" />
+								<label
+									style="font-size:18px;font-weight:bold;">
+									:
+								</label>
+								<intbox maxlength="2" width="100%" />
+							</hbox>
+
+						</vbox>
+					</hbox>
+
+					<hbox align="center">
+						<vbox height="150px" />
+						<button height="35px" label="Salvar"
+							image="images/Add-32.png" />
+						<button height="35px" label="Cancelar"
+							image="images/Delete-32.png" />
+					</hbox>
+
+
+
+
+
+
+				</panelchildren>
+			</panel>
+
+		</columnchildren>
+	</columnlayout>
+</window>
