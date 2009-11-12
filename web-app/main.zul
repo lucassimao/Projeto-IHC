@@ -1,0 +1,187 @@
+<?page title="Agenda Pessoal"?>
+
+<window position="center" mode="modal" title="Agenda Pessoal"
+	border="normal" width="98%" height="98%">
+	<style>
+		.z-caption .z-caption-l, .z-caption .z-caption-r {
+		font-size:20px; }
+
+		.z-groupbox-hl .z-groupbox-header {
+		color:#373737;font-weight:bold; }
+
+		.z-panel-children { border-color:red; }
+
+
+	</style>
+
+
+	<columnlayout>
+		<columnchildren width="25%">
+			<panel>
+				<panelchildren>
+					<vbox>
+						<box>
+							<space height="15px" />
+							<hbox>
+							<vbox width="8px"/>
+								<groupbox  closable="false" mold="3d"
+									width="270px">
+									<caption style="font-size:120px"
+										label="Meus Contatos" />
+									<image src="images/user-128.png"
+										border="true" />
+
+								</groupbox>
+
+							</hbox>
+
+							<hbox>
+							<vbox width="8px"/>
+								<groupbox closable="false" mold="3d"
+									width="270px">
+									<caption label="Meus Compromissos" />
+									<image
+										src="images/Address-Book_128x128.png" />
+
+								</groupbox>
+
+
+							</hbox>
+
+							<hbox>
+							<vbox width="8px"/>
+								<groupbox closable="false" mold="3d"
+									width="270px">
+									<caption label="Reuniões" />
+									<image
+										src="images/reuniao.png" />
+
+								</groupbox>
+
+
+							</hbox>
+
+
+						</box>
+					</vbox>
+
+				</panelchildren>
+			</panel>
+
+		</columnchildren>
+
+		<columnchildren width="75%">
+			<panel>
+				<panelchildren>
+					<hbox>
+						<label value="Agenda > Página Principal"
+							style="font-weight:bold;font-size:20px" />
+
+					</hbox>
+					<hbox>
+						<label value="Próximos Compromissos ..."
+							style="font-weight:bold;font-size:40px;color:rgb(0,0,255)" />
+
+					</hbox>
+					<space height="20px" />
+
+
+
+					<vbox width="100%">
+						<groupbox mold="3d" closable="false"
+							width="85%">
+							<caption label="Compromisso">
+								<hbox>
+								<vbox>
+								<image src="images/Pencil-32.png" height="30px"/>
+								Editar
+								</vbox>
+								
+								<vbox>
+								<image src="images/Delete-128.png"	height="30px" />
+								Excluir
+								</vbox>
+								</hbox>
+								
+							</caption>
+							<image height="64px"
+								src="images/Address-Book_128x128.png" />
+
+						</groupbox>
+
+						<groupbox closable="false" mold="3d"
+							width="85%">
+							<caption label="Reunião">
+	<hbox>
+								<vbox>
+								<image src="images/Pencil-32.png" height="30px"/>
+								Editar
+								</vbox>
+								
+								<vbox>
+								<image src="images/Delete-128.png"	height="30px" />
+								Excluir
+								</vbox>
+								</hbox>
+								
+							</caption>
+							<image height="64px"
+								src="images/reuniao.png" />
+
+						</groupbox>
+
+						<groupbox closable="false" mold="3d"
+							width="85%">
+							<caption label="Reunião">
+	<hbox>
+								<vbox>
+								<image src="images/Pencil-32.png" height="30px"/>
+								Editar
+								</vbox>
+								
+								<vbox>
+								<image src="images/Delete-128.png"	height="30px" />
+								Excluir
+								</vbox>
+								</hbox>
+								
+							</caption>
+							<image height="64px"
+								src="images/reuniao.png" />
+
+						</groupbox>
+						
+												<groupbox mold="3d" closable="false"
+							width="85%">
+							<caption label="Compromisso">
+								<hbox>
+								<vbox>
+								<image src="images/Pencil-32.png" height="30px"/>
+								Editar
+								</vbox>
+								
+								<vbox>
+								<image src="images/Delete-128.png"	height="30px" />
+								Excluir
+								</vbox>
+								</hbox>
+								
+							</caption>
+							<image height="64px"
+								src="images/Address-Book_128x128.png" />
+
+						</groupbox>
+
+					</vbox>
+					<vbox width="85%">
+						<label value="Mais Compromissos ..."
+							style="float:right;font-weight:bold;font-size:30px;color:rgb(0,0,255)" />
+
+					</vbox>
+
+				</panelchildren>
+			</panel>
+
+		</columnchildren>
+	</columnlayout>
+</window>
