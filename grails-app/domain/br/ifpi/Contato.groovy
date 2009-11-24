@@ -1,17 +1,21 @@
 package br.ifpi
 
+public enum Sexo{
+	Masculino,Feminino
+}
 class Contato {
 	String nome
-	String endereco
 	String email
-	String telefone
-	String celular
+	String login
+	String senha
+	Date dataNascimento
+	Sexo sexo = Sexo.Masculino
 	
     static constraints = {
 		nome(nullable:false,blank:false)
-		endereco(nullable:true,blank:true)
+		login(nullable:false,blank:false)
+		senha(nullable:false,blank:false)
+		dataNascimento(nullable:false,blank:false)
 		email(nullable:true,blank:true,email:true)
-		telefone(nullable:true,blank:true)
-		celular(nullable:true,blank:true)
 	}
 }

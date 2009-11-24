@@ -1,6 +1,4 @@
-<?page title="Agenda Pessoal"?>
-
-<window position="center" mode="modal" title="Agenda Pessoal"
+<window id="winLogin" apply="LoginComposer" position="center" mode="modal" title="Agenda Pessoal"
 	border="normal" width="98%" height="98%">
 	<style>
 		.z-caption .z-caption-l, .z-caption .z-caption-r {
@@ -39,23 +37,28 @@
 									<caption>Acesse sua agenda</caption>
 									<vbox width="100%">
 										Usuário:
-										<textbox width="60%" />
+										<textbox id="textUsuario" width="60%" />
 										Senha:
-										<textbox width="60%" />
+										<textbox id="textSenha" width="60%" />
 										<space height="20px" />
 										<hbox>
-											<button label="Entrar" />
-											<button label="Limpar" />
+											<button id="btnEntrar" label="Entrar" />
+											<button id="btnLimpar" label="Limpar" />
 										</hbox>
 									</vbox>
 								</groupbox>
 
 							</vbox>
 							<space height="36px" />
+						
+						
 							<vbox width="100%">
-								<groupbox>
+								
+								
+								<groupbox id="groupboxCriarAgendaVirtual" action="onclick: window.location='/Projeto-IHC/cadastro.zul'">
+								
 									<groupbox
-										style="background-color:rgb(255,255,128)" closable="false"
+										style="background-color:rgb(255,255,128);cursor: pointer" closable="false"
 										mold="3d" width="100%">
 										<caption />
 										<label style="font-size:25px">
@@ -64,7 +67,7 @@
 
 									</groupbox>
 									<groupbox
-										style="background-color:rgb(128,255,128)" closable="false"
+										style="background-color:rgb(128,255,128);cursor: pointer" closable="false"
 										mold="3d" width="100%">
 										<caption />
 										<label style="font-size:25px">
@@ -73,6 +76,9 @@
 									</groupbox>
 								</groupbox>
 							</vbox>
+							
+						
+						
 						</groupbox>
 					</vbox>
 				</panelchildren>

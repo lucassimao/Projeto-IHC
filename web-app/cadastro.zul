@@ -1,4 +1,4 @@
-<window position="center" mode="modal" title="Cadastro" border="normal"
+<window position="center" mode="modal" title="Cadastro" border="normal" apply="CadastroComposer"
 	width="95%" height="95%">
 
 	<style>.asterisco{ font-size:25px; color:red; }</style>
@@ -75,7 +75,7 @@
 							
 					
 			   </html>
-						<textbox width="75%" />
+						<textbox id="textboxNome" width="75%" constraint="no empty"/>
 						<hbox width="100%">
 							<vbox>
 								<html>
@@ -95,7 +95,7 @@
 									
 									
 									 </html>
-								<datebox width="100%" />
+								<datebox id="dateboxNascimento" constraint="no empty, no future" width="100%" />
 							</vbox>
 
 							<vbox>
@@ -116,8 +116,8 @@
 									
 									
 									  </html>
-								<radiogroup>
-									<radio
+								<radiogroup id="radiogroupSexo">
+									<radio selected="true"
 										style="font-size:12px;font-weight:bold;" label="Masculino" />
 									<radio
 										style="font-size:12px;font-weight:bold;" label="Feminino" />
@@ -129,7 +129,7 @@
 							style="font-size:18px;font-weight:bold;">
 							Email:
 						</label>
-						<textbox width="25%" />
+						<textbox id="textboxEmail" width="25%" />
 					</vbox>
 
 
@@ -154,7 +154,7 @@
 								
 										
 			   </html>
-							<textbox width="100%" />
+							<textbox id="textboxUsuario" constraint="no empty" width="100%" />
 						</vbox>
 
 						<vbox width="50%">
@@ -176,16 +176,15 @@
 								
 											
 			   </html>
-							<textbox width="100%" />
+							<textbox id="textboxSenha" constraint="no empty" width="100%" />
 
 						</vbox>
 					</hbox>
 
 					<hbox align="center">
 						<vbox height="150px"/>
-						<button height="35px"
-							label="Criar minha agenda!" />
-						<button height="35px" label="Voltar para página principal" />
+						<button id="btnCriarAgenda" height="35px" image="images/Add-32.png"	label="Criar minha agenda!" />
+						<button image="images/Back-16.png" action="onclick: window.location='/Projeto-IHC/login.zul'" height="35px" label="Voltar para página principal" />
 					</hbox>
 
 
