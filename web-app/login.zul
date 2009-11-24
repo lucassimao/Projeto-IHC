@@ -37,10 +37,27 @@
 									<caption>Acesse sua agenda</caption>
 									<vbox width="100%">
 										Usuário:
-										<textbox id="textUsuario" width="60%" />
+										<textbox  id="textUsuario" width="60%" />
 										Senha:
-										<textbox id="textSenha" width="60%" />
-										<space height="20px" />
+										<textbox  id="textSenha" width="60%" />
+										<space height="5px" />
+										<zscript language="Groovy">
+											import org.zkoss.zk.ui.Sessions
+											import org.zkoss.zk.ui.Session
+											
+											self.setVariable("mostrarMsgErro",  Sessions.current.getAttribute("loginIncorreto")==true, true);
+										</zscript>
+										<groupbox if="${mostrarMsgErro}" style="background-color:white;border-color:red" closable="false">
+											<label style="font-size:15px">
+												Usuário ou senha inválido(s)!
+											</label>
+											<zscript language="Groovy">
+												import org.zkoss.zk.ui.Sessions
+												import org.zkoss.zk.ui.Session
+											
+												Sessions.current.removeAttribute("loginIncorreto")
+											</zscript>
+										</groupbox>
 										<hbox>
 											<button id="btnEntrar" label="Entrar" />
 											<button id="btnLimpar" label="Limpar" />

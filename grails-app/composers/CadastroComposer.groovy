@@ -1,6 +1,7 @@
 import org.zkoss.zkgrails.*
 import br.ifpi.*
 import org.zkoss.zhtml.Messagebox
+import org.zkoss.zk.ui.Executions
 
 class CadastroComposer extends GrailsComposer {
     
@@ -11,6 +12,7 @@ class CadastroComposer extends GrailsComposer {
 	def textboxSenha
 	def textboxUsuario
 	def btnCriarAgenda
+	def btnVoltar
 	
     def cadastroFacade
     
@@ -26,6 +28,7 @@ class CadastroComposer extends GrailsComposer {
 			c.save()
 			Messagebox.show('Cadastro realizado com sucesso! Voce sera levado para a pagina de login!',
 							'Cadastro realizado',Messagebox.OK,Messagebox.INFORMATION)
+			Executions.current.sendRedirect('/login.zul')
 		}	
 	}
     def afterCompose = { c ->

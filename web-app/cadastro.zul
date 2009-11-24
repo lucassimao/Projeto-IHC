@@ -184,7 +184,7 @@
 					<hbox align="center">
 						<vbox height="150px"/>
 						<button id="btnCriarAgenda" height="35px" image="images/Add-32.png"	label="Criar minha agenda!" />
-						<button image="images/Back-16.png" action="onclick: window.location='/Projeto-IHC/login.zul'" height="35px" label="Voltar para página principal" />
+						<button id="btnVoltar" image="images/Back-16.png" action="onclick: window.location='/Projeto-IHC/login.zul'" height="35px" label="Voltar para página principal" />
 					</hbox>
 
 
