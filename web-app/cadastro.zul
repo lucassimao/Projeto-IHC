@@ -76,64 +76,47 @@
 					
 			   </html>
 						<textbox id="textboxNome" width="75%" constraint="no empty"/>
-						<hbox width="100%">
-							<vbox>
-								<html>
-
-
-
-
-
-									
-									<![CDATA[ <span
-									style="font-size:18px;font-weight:bold;"><span
-									class="asterisco"> * </span>Data de
-									Nascimento:</span>]]>
-									
-									
-									
-									
-									
-									 </html>
-								<datebox id="dateboxNascimento" constraint="no empty, no future" width="100%" />
-							</vbox>
-
-							<vbox>
-								<html>
-
-
-
-
-
-									
-									<![CDATA[ <span
-									style="font-size:18px;font-weight:bold;"><span
-									class="asterisco"> *
-									</span>Sexo:</span>]]>
-									
-									
-									
-									
-									
-									  </html>
-								<radiogroup id="radiogroupSexo">
-									<radio selected="true"
-										style="font-size:12px;font-weight:bold;" label="Masculino" />
-									<radio
-										style="font-size:12px;font-weight:bold;" label="Feminino" />
-								</radiogroup>
-							</vbox>
-						</hbox>
-
+					</vbox>
+					
+					<hbox width="100%">
+						<vbox width="50%">
 						<label
+							style="font-size:18px;font-weight:bold;">
+							Endereco:
+						</label>
+							<textbox id="textboxEndereco" width="100%" />
+						</vbox>
+
+						<vbox width="50%">
+													<label
 							style="font-size:18px;font-weight:bold;">
 							Email:
 						</label>
-						<textbox id="textboxEmail" width="25%" />
-					</vbox>
+							<textbox id="textboxEmail"  width="100%" />
 
+						</vbox>
+					</hbox>
+					
 
+					<hbox width="100%">
+						<vbox width="50%">
+						<label
+							style="font-size:18px;font-weight:bold;">
+							Telefone:
+						</label>
+							<textbox id="textboxTelefone" width="100%" />
+						</vbox>
 
+						<vbox width="50%">
+													<label
+							style="font-size:18px;font-weight:bold;">
+							Celular:
+						</label>
+							<textbox id="textboxCelular" width="100%" />
+
+						</vbox>
+					</hbox>
+					
 					<hbox width="100%">
 						<vbox width="50%">
 							<html>

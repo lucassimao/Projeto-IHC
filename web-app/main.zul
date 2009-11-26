@@ -25,7 +25,7 @@
 							<space height="15px" />
 							<hbox>
 							<vbox width="8px"/>
-								<groupbox  closable="false" mold="3d"
+								<groupbox style="cursor: pointer" action="onclick: window.location='/Projeto-IHC/meusContatos.zul'" closable="false" mold="3d"
 									width="270px">
 									<caption style="font-size:120px"
 										label="Meus Contatos" />
@@ -38,7 +38,7 @@
 
 							<hbox>
 							<vbox width="8px"/>
-								<groupbox closable="false" mold="3d"
+								<groupbox style="cursor: pointer" action="onclick: window.location='/Projeto-IHC/meusCompromissos.zul'" closable="false" mold="3d"
 									width="270px">
 									<caption label="Meus Compromissos" />
 									<image
@@ -51,7 +51,7 @@
 
 							<hbox>
 							<vbox width="8px"/>
-								<groupbox closable="false" mold="3d"
+								<groupbox style="cursor: pointer" action="onclick: window.location='/Projeto-IHC/minhasReunioes.zul'" closable="false" mold="3d"
 									width="270px">
 									<caption label="Reuniões" />
 									<image

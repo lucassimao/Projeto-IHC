@@ -6,23 +6,20 @@ import org.zkoss.zk.ui.Executions
 class CadastroComposer extends GrailsComposer {
     
     def textboxNome    
-	def dateboxNascimento
-	def radiogroupSexo
+	def textboxEndereco
 	def textboxEmail
-	def textboxSenha
+	def textboxTelefone
+	def textboxCelular
 	def textboxUsuario
+	def textboxSenha
 	def btnCriarAgenda
 	def btnVoltar
 	
     def cadastroFacade
     
 	def onClick_btnCriarAgenda(){
-		def c = new Contato(nome:textboxNome.value,dataNascimento:dateboxNascimento.value,
+		def c = new Contato(nome:textboxNome.value,endereco:textboxEndereco.value,telefone:textboxTelefone.value,celular:textboxCelular.value,
 							email:textboxEmail.value,login:textboxUsuario.value,senha:textboxSenha.value)
-		if (radiogroupSexo.selectedIndex==0)
-			c.sexo = Sexo.Masculino
-		else
-			c.sexo = Sexo.Feminino
 		
 		if (c.validate()){
 			c.save()

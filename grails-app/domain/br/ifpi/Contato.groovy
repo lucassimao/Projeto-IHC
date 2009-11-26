@@ -1,21 +1,29 @@
 package br.ifpi
 
-public enum Sexo{
-	Masculino,Feminino
-}
 class Contato {
 	String nome
 	String email
 	String login
 	String senha
-	Date dataNascimento
-	Sexo sexo = Sexo.Masculino
+	String telefone
+	String celular
+	String endereco
+	Set<Contato> contatos
+	
+	static hasMany= [contatos:Contato]
+	
+	static mapping = {
+		contatos lazy: false
+	}
 	
     static constraints = {
 		nome(nullable:false,blank:false)
-		login(nullable:false,blank:false)
-		senha(nullable:false,blank:false)
-		dataNascimento(nullable:false,blank:false)
+		// Se for um contato cadastrado no sistema, ele terá senha
+		login(nullable:true,blank:true)
+		senha(nullable:true,blank:true)
+		endereco(nullable:true,blank:true)
+		telefone(nullable:true,blank:true)
+		celular(nullable:true,blank:true)
 		email(nullable:true,blank:true,email:true)
 	}
 }

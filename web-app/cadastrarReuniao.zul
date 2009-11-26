@@ -292,65 +292,6 @@
 						</columnlayout>
 					</hbox>
 
-					<groupbox width="60%" height="50%">
-						<caption>Membros</caption>
-						<vbox>
-							Selecione os contatos que participarão da
-							reunião
-							<columnlayout>
-								<columnchildren width="43%">
-									<panel>
-										<panelchildren>
-											<listbox height="120px"
-												fixedLayout="true">
-												<listhead>
-													<listheader
-														label="Contatos" sort="auto" />
-												</listhead>
-												<listitem>
-													<listcell label="" />
-												</listitem>
-											</listbox>
-										</panelchildren>
-									</panel>
-								</columnchildren>
-								<columnchildren width="13%">
-									<panel>
-										<panelchildren>
-											<hbox>
-												<space width="5%" />
-												<vbox>
-													<space height="30%" />
-													<button
-														image="images/Back-16.png" />
-													<button
-														image="images/Back2-16.png" />
-												</vbox>
-												<space width="5%" />
-											</hbox>
-										</panelchildren>
-									</panel>
-								</columnchildren>
-								<columnchildren width="43%">
-									<panel>
-										<panelchildren>
-											<listbox height="120px"
-												fixedLayout="true">
-												<listhead>
-													<listheader
-														label="Convidados" sort="auto" />
-												</listhead>
-												<listitem>
-													<listcell label="" />
-												</listitem>
-											</listbox>
-										</panelchildren>
-									</panel>
-								</columnchildren>
-							</columnlayout>
-						</vbox>
-					</groupbox>
-
 
 
 

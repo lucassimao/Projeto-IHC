@@ -134,19 +134,19 @@
 							
 					
 			   </html>
-						<textbox width="75%" />
+						<textbox id="textNome" width="75%" />
 
 						<label
 							style="font-size:18px;font-weight:bold;">
 							Endereço:
 						</label>
-						<textbox width="25%" />
+						<textbox id="textEndereco" width="25%" />
 						
 						<label
 							style="font-size:18px;font-weight:bold;">
 							Email:
 						</label>
-						<textbox width="25%" />
+						<textbox id="textEmail" width="25%" />
 					</vbox>
 
 
@@ -154,21 +154,21 @@
 					<hbox width="100%">
 						<vbox width="50%">
 						<label style="font-size:18px;font-weight:bold" >Telefone</label>
-							<textbox width="100%" />
+							<textbox id="textTelefone" width="100%" />
 						</vbox>
 
 						<vbox width="50%">
 							<label  style="font-size:18px;font-weight:bold" >Celular</label>
-							<textbox width="100%" />
+							<textbox id="textCelular" width="100%" />
 
 						</vbox>
 					</hbox>
 
 					<hbox align="center">
 						<vbox height="150px"/>
-						<button height="35px"
+						<button height="35px" id="btnSalvar" 
 							label="Salvar"  image="images/Add-32.png" />
-						<button height="35px"
+						<button height="35px" action="onclick: window.location='/Projeto-IHC/main.zul'"
 							label="Cancelar" image="images/Delete-32.png"/>
 					</hbox>
 

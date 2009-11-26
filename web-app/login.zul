@@ -74,21 +74,13 @@
 								
 								<groupbox id="groupboxCriarAgendaVirtual" action="onclick: window.location='/Projeto-IHC/cadastro.zul'">
 								
-									<groupbox
-										style="background-color:rgb(255,255,128);cursor: pointer" closable="false"
-										mold="3d" width="100%">
+									<groupbox height="245px"
+										style="background-color:rgb(128,255,128);cursor: pointer" closable="false"	mold="3d" width="100%">
 										<caption />
 										<label style="font-size:25px">
-											Não perca seus compromissos!
-										</label>
-
-									</groupbox>
-									<groupbox
-										style="background-color:rgb(128,255,128);cursor: pointer" closable="false"
-										mold="3d" width="100%">
-										<caption />
-										<label style="font-size:25px">
+										Não perca seus compromissos!
 											Crie sua agenda virtual!
+											Clique aqui!
 										</label>
 									</groupbox>
 								</groupbox>

@@ -1,6 +1,6 @@
 <?page title="Meus Contatos"?>
 
-<window position="center" mode="modal" title="Agenda Pessoal"
+<window position="center" mode="modal" title="Agenda Pessoal" apply="GerenciarContatosComposer"
 	border="normal" width="98%" height="98%">
 	<style>
 		.z-caption .z-caption-l, .z-caption .z-caption-r {
@@ -24,7 +24,7 @@
 							<space height="15px" />
 							<hbox>
 								<vbox width="8px" />
-								<groupbox closable="false" mold="3d"
+								<groupbox style="cursor: pointer" action="onclick: window.location='/Projeto-IHC/cadastrarContatos.zul'" closable="false" mold="3d"
 									width="270px">
 									<caption style="font-size:120px"
 										label="Cadastrar Contato" />
@@ -37,7 +37,7 @@
 
 							<hbox>
 								<vbox width="8px" />
-								<groupbox closable="false" mold="3d"
+								<groupbox id="groupboxExcluirContato" style="cursor: pointer" closable="false" mold="3d"
 									width="270px">
 									<caption label="Excluir Contato" />
 									<image src="images/Empty Trash_128x128.png" />
@@ -49,7 +49,7 @@
 
 							<hbox>
 								<vbox width="8px" />
-								<groupbox closable="false" mold="3d"
+								<groupbox id="groupboxEditarContato" style="cursor: pointer" closable="false" mold="3d"
 									width="270px">
 									<caption label="Editar dados"
 										tooltiptext="Editar dados do Contato" />
@@ -61,7 +61,7 @@
 							</hbox>
 							<hbox>
 								<vbox width="8px" />
-								<groupbox closable="false" mold="3d"
+								<groupbox style="cursor: pointer" action="onclick: window.location='/Projeto-IHC/main.zul'" closable="false" mold="3d"
 									width="270px" height="150px">
 									<caption label="Voltar"
 										tooltiptext="Voltar para página principal" />
@@ -84,8 +84,8 @@
 			<panel>
 				<panelchildren>
 					<hbox>
-						<label value="Agenda > Meus Contatos"
-							style="font-weight:bold;font-size:20px" />
+						<label value="Agenda" style="font-weight:bold;font-size:20px;cursor: pointer;text-decoration: underline" action="onclick: window.location='/Projeto-IHC/main.zul'"/>
+						<label value=" > Meus Contatos"	style="font-weight:bold;font-size:20px" />
 
 					</hbox>
 
@@ -99,7 +99,7 @@
 							<hbox align="center">
 								<vbox>
 								Nome:
-								<textbox width="450px" height="20px"
+								<textbox id="textboxProcurar" width="450px" height="20px"
 									style="font-size:18px" />
 								</vbox>
 								<image height="100px"
@@ -108,24 +108,17 @@
 
 
 
-							<listbox height="455px"
+							<listbox id="listBoxContatos" height="455px"
 								fixedLayout="true">
 								<listhead>
 									<listheader label="Nome"
 										sort="auto" />
-									<listheader label="Endereço"
+									<listheader label="Endereco"
 										sort="auto" />
-									<listheader label="Telefone"
-										sort="auto" />
-									<listheader label="Celular"
-										sort="auto" />
+									<listheader label="Email"	sort="auto" />
+									<listheader label="Telefone"	sort="auto" />
+										<listheader label="Celular"	sort="auto" />
 								</listhead>
-								<listitem>
-									<listcell label="" />
-									<listcell label="" />
-									<listcell label="" />
-									<listcell label="" />
-								</listitem>
 
 							</listbox>
 
