@@ -1,6 +1,6 @@
 <?page title="Meus Contatos"?>
 
-<window position="center" mode="modal" title="Agenda Pessoal"
+<window apply="CadastrarContatosComposer" position="center" mode="modal" title="Agenda Pessoal"
 	border="normal" width="98%" height="98%">
 	<style>
 		.z-caption .z-caption-l, .z-caption .z-caption-r {
@@ -24,7 +24,7 @@
 							<space height="15px" />
 							<hbox>
 								<vbox width="8px" />
-								<groupbox closable="false" mold="3d"
+								<groupbox style="cursor: pointer" action="onclick: window.location='/Projeto-IHC/meusContatos.zul'" closable="false" mold="3d"
 									width="270px">
 									<caption style="font-size:120px"
 										label="Cancelar Cadastro" />
@@ -37,7 +37,7 @@
 
 							<hbox>
 								<vbox width="8px" />
-								<groupbox closable="false" mold="3d"
+								<groupbox id="groupboxLimparFormulario" closable="false" mold="3d" style="cursor: pointer"
 									width="270px">
 									<caption label="Limpar Formulário" />
 									<image src="images/128px-Broom_icon.svg.png" />
@@ -49,7 +49,7 @@
 
 							<hbox>
 								<vbox width="8px" />
-								<groupbox closable="false" mold="3d"
+								<groupbox style="cursor: pointer" action="onclick: window.location='/Projeto-IHC/meusContatos.zul'" closable="false" mold="3d"
 									width="270px">
 									<caption label="Voltar"
 										tooltiptext="Voltar para o cadastro de contatos"/>
@@ -72,8 +72,11 @@
 			<panel>
 				<panelchildren>
 					<hbox>
-						<label value="Agenda > Meus Contatos > Cadastrar Contatos"
-							style="font-weight:bold;font-size:20px" />
+						<label value="Agenda" style="font-weight:bold;font-size:20px;cursor: pointer;text-decoration: underline" action="onclick: window.location='/Projeto-IHC/main.zul'"/>
+						<label value=" >" style="font-weight:bold;font-size:20px;"/>
+						<label value="Meus Contatos" style="font-weight:bold;font-size:20px;cursor: pointer;text-decoration: underline" action="onclick: window.location='/Projeto-IHC/meusContatos.zul'"/>
+						<label value=" >" style="font-weight:bold;font-size:20px;"/>
+						<label value="Cadastrar Contatos"	style="font-weight:bold;font-size:20px" />
 
 					</hbox>
 
@@ -134,19 +137,19 @@
 							
 					
 			   </html>
-						<textbox width="75%" />
+						<textbox id="textBoxNome" constraint="no empty" width="75%" />
 
 						<label
 							style="font-size:18px;font-weight:bold;">
 							Endereço:
 						</label>
-						<textbox width="25%" />
+						<textbox id="textBoxEndereco" width="25%" />
 						
 						<label
 							style="font-size:18px;font-weight:bold;">
 							Email:
 						</label>
-						<textbox width="25%" />
+						<textbox id="textBoxEmail" width="25%" />
 					</vbox>
 
 
@@ -154,23 +157,23 @@
 					<hbox width="100%">
 						<vbox width="50%">
 						<label style="font-size:18px;font-weight:bold" >Telefone</label>
-							<textbox width="100%" />
+							<textbox id="textBoxTelefone" width="100%" />
 						</vbox>
 
 						<vbox width="50%">
 							<label  style="font-size:18px;font-weight:bold" >Celular</label>
-							<textbox width="100%" />
+							<textbox id="textBoxCelular" width="100%" />
 
 						</vbox>
 					</hbox>
 
 					<hbox align="center">
 						<vbox height="150px"/>
-						<button height="35px"
+						<button height="35px" id="btnSalvar"
 							label="Salvar"  image="images/Add-32.png" />
-						<button height="35px" image="images/Add-32.png" label="Salvar e Cadastrar outro Contato" />
+						<button  id="btnSalvarECadastrarOutro" height="35px" image="images/Add-32.png" label="Salvar e Cadastrar outro Contato" />
 						<button height="35px"
-							label="Cancelar" image="images/Delete-32.png"/>
+							label="Cancelar" action="onclick: window.location='/Projeto-IHC/meusContatos.zul'" image="images/Delete-32.png"/>
 					</hbox>
 
 
