@@ -1,6 +1,6 @@
 <?page title="Meus Contatos"?>
 
-<window apply="CadastrarContatosComposer" position="center" mode="modal" title="Agenda Pessoal"
+<window apply="CadastrarContatosComposer" position="center" mode="modal" id="winCadastrarContato" title="Agenda Pessoal"
 	border="normal" width="98%" height="98%">
 	<style>
 		.z-caption .z-caption-l, .z-caption .z-caption-r {
@@ -136,9 +136,16 @@
 				
 							
 					
-			   </html>
-						<textbox id="textBoxNome" constraint="no empty" width="75%" />
-
+			   </html>	<hbox width="75%" align="center">
+						<textbox id="textBoxNome" constraint="no empty" width="95%" />
+						<popup id="msg">
+							<vbox>
+							<label style="font-size:20px">Clique aqui para adicionar um amigo que</label>
+							<label style="font-size:20px">já possui uma agenda como seu contato.</label>
+							</vbox>
+						</popup>
+						<image id="btnProcurarContato" tooltip="msg" height="60px" style="cursor: pointer" src="images/Find Search_64.png" />
+						</hbox>
 						<label
 							style="font-size:18px;font-weight:bold;">
 							Endereço:
